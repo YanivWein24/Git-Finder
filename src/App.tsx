@@ -5,6 +5,7 @@ import Card from './components/Card/Card';
 import './App.css';
 
 export type UserData = {
+  id: number,
   name: string,
   userName: string,
   imageUrl: string,
@@ -23,6 +24,7 @@ export type UserData = {
 const App:FC = () => {
 
 const [userData, setUserData] = useState<UserData>({
+  id: -1,
   name: '',
   userName: '',
   imageUrl: '',
@@ -42,7 +44,7 @@ const [userData, setUserData] = useState<UserData>({
     <div className="App">
     <Header />
     <Search setUserData={setUserData}/>
-    {userData.name !== '' && <Card userData={userData}/>}
+    { userData.id === -2 ? <h1 className="error fade-in">ooops...<br />couldn't find user</h1> : userData.id > 0 && <Card userData={userData}/>}
     </div>
   );
 }

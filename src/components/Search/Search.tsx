@@ -9,6 +9,7 @@ const Search = ({setUserData}:{setUserData:React.Dispatch<React.SetStateAction<a
         fetch(`https://api.github.com/users/${search}`)
         .then(res => res.json())
         .then(data => setUserData({
+            id: data.id ? data.id : -2,  // -2 if user is not found
             name: data.name || '',
             userName: data.login || '',
             imageUrl: data.avatar_url || '',
@@ -31,12 +32,12 @@ const Search = ({setUserData}:{setUserData:React.Dispatch<React.SetStateAction<a
     <input
     placeholder="Search Github Username..."
     onChange={(event) => {setSearch(event.target.value)}}
-    onKeyDown={(event) => event.key === 'Enter' && fetchData()}
+    onKeyDown={(event) => event.key === 'Enter' && search !== '' && fetchData()}
     value={search}
     >
     </input>
     <button
-    onClick={fetchData}>
+    onClick={() => search !== '' && fetchData()}>
         Search
     </button>
     </div>
