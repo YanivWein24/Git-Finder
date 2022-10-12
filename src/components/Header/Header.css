@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:1rem;
+}
+
+.header p {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.header p i {
+    margin-left:.1rem;
+    font-weight:600;
+}
