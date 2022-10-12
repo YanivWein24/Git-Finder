@@ -1,6 +1,7 @@
 import React,{FC} from 'react';
 import Header from './components/Header/Header';
 import Search from './components/Search/Search';
+import Card from './components/Card/Card';
 import './App.css';
 
 const App:FC = () => {
@@ -8,6 +9,7 @@ const App:FC = () => {
     <div className="App">
     <Header />
     <Search />
+    <Card />
     </div>
   );
 }
