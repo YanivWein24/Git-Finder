@@ -35,19 +35,19 @@ const Card = ({userData}:{userData:UserData}) => {
         <div className="bottomContainer">
             <div className="row">
                 <i className="fa-solid fa-location-dot"></i>
-                {userData.location ? <p>{userData.location}</p> : <p style={{"color":"grey"}}>No location Info</p>}
+                {userData.location ? <p>{userData.location}</p> : <p className="noInfo">No location Info</p>}
             </div>
             <div className="row">
                 <i className="fa-solid fa-link"></i>
-                {userData.blog ? <a href={userData.blog}>{userData.blog}</a> : <p style={{"color":"grey"}}>No blog Info</p>}
+                {userData.blog ? <a href={userData.blog}>{userData.blog}</a> : <p className="noInfo">No blog Info</p>}
             </div>
             <div className="row">
                 <i className="fa-brands fa-twitter"></i>
-                {userData.twitter ? <p>{userData.twitter}</p> : <p style={{"color":"grey"}}>No Twitter Info</p>}
+                {userData.twitter ? <p>{userData.twitter}</p> : <p className="noInfo" >No Twitter Info</p>}
             </div>
             <div className="row">
             <i className="fa-regular fa-building"></i>
-                {userData.company ? <p>{userData.company}</p> : <p style={{"color":"grey"}}>No Company Info</p>}
+                {userData.company ? <p>{userData.company}</p> : <p className="noInfo">No Company Info</p>}
             </div>
         </div>
     </div>

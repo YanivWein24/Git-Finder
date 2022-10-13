@@ -32,12 +32,14 @@ font-size: 11px;
     line-height: 1;
     font-family: 'Noto Sans Mono', monospace;
     margin-bottom:0;
+    color: #fff;
 }
 
 .infoContainer h2 {
     color: var(--color-light-blue);
     font-size:12px;
     font-weight:500;
+    transition: all .2s ease;
 }
 
 .infoContainer p {
@@ -97,6 +99,14 @@ font-size: 11px;
     height:20px;
 }
 
+.bottomContainer .noInfo {
+    color: rgba(220,220,220,.7);
+}
+
+#light .bottomContainer .noInfo  {
+    color: rgba(110,110,110,.6);
+}
+
 .bottomContainer .row {
     display:flex;
     align-items: center;
@@ -127,4 +137,30 @@ font-size: 11px;
     font-weight:bold;
 }
 
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .card {
+        padding:2rem;
+    }
+
+    .topSection {
+        gap: 2rem;
+    }
+
+    .imageContainer img {
+        width:120px;
+        height:120px;
+        border-radius:100px;
+    }
+
+    .bottomContainer {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+
+    .row {
+        width: 50%;
+    }
+}
 

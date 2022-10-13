@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding:1rem auto;
 }
 
 .header p {
@@ -11,10 +10,16 @@
 }
 
 .header p i {
-    margin-left:.1rem;
+    margin-left:.3rem;
     font-weight:600;
 }
 
 #light .header {
     color: var(--color-dark-grey);
 } 
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .header {
+        margin:4rem auto 1rem;
+    }
+}
