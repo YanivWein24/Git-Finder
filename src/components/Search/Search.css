@@ -77,11 +77,11 @@
   }
 
   .search button:hover {
-    transform: scale(1.03)
+    transform: scale(1.03);
   }
 
   .search button:active {
-    transform: scale(1.07)
+    transform: scale(1.07);
   }
 
   .search input {

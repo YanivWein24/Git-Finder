@@ -5,13 +5,21 @@ alt="My Project GIF" width="600" height="323">
 <br>
 
 A search engine for GitHub users! <br />
-Type in a valid GitHub username and find all the relevant info about that user. <br />
-All data is coming from GitHub's official REST-API <br />
+Type in a valid username and find all the relevant info about that user. <br />
+All data is coming from GitHub's REST-API. <br />
 Responsive and well-suited for mobile, tablets, and desktop screens.
 
 ## Where can i check this out?
 
 Right Here: https://git-finderr.netlify.app/
+<br />
+
+## Features:
+
+- Search for any user on GitHub and get updated data.
+- Support for dark/light modes using 'Context'.
+- The theme is being memorized in the user's local storage, for the next time they visit!
+
 <br />
 
 ## Lighthouse Score:

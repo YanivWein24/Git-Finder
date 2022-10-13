@@ -1,22 +1,22 @@
 .footer {
-    text-align: center;
-    margin: 1rem auto;
+  text-align: center;
+  margin: 1rem auto;
 }
 
 .footer p {
-    margin: 0.3rem;
-    color: var(--color-light-grey);
-    font-size: .9rem;
+  margin: 0.3rem;
+  color: var(--color-light-grey);
+  font-size: 0.9rem;
 }
 
 .footer i {
-    font-size: 1.2rem;
-    color: var(--color-dark-grey);
-    margin: 0 0.3rem;
-    transition: transform .2s ease;
+  font-size: 1.2rem;
+  color: var(--color-dark-grey);
+  margin: 0 0.3rem;
+  transition: transform 0.2s ease;
 }
 
 .footer i:hover {
-    transform: scale(1.1);
-    color: var(--color-light-grey);
+  transform: scale(1.1);
+  color: var(--color-light-grey);
 }

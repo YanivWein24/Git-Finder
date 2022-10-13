@@ -1,13 +1,13 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
-const year = new Date().getFullYear()
+const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
     <div className="footer">
-    <p>Ⓒ Yaniv Weinshtein {year}</p>
-    <div className="socials">
+      <p>Ⓒ Yaniv Weinshtein {year}</p>
+      <div className="socials">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -48,7 +48,7 @@
   font-size: 14px;
   font-weight: 500;
   margin-top: 0;
-  color:var(--color-light-grey)
+  color: var(--color-light-grey);
 }
 
 .middleSection {
@@ -59,7 +59,7 @@
 .middleSection .bio {
   line-height: 1.7;
   display: block;
-  color:var(--color-light-grey);
+  color: var(--color-light-grey);
 }
 
 .reposAndFollowers {
@@ -204,7 +204,7 @@
 }
 
 @media screen and (min-width: 1601px) {
-    .card {
-        padding: 3rem 4rem;
-    }
+  .card {
+    padding: 3rem 4rem;
+  }
 }
