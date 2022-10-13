@@ -48,6 +48,7 @@
   font-size: 14px;
   font-weight: 500;
   margin-top: 0;
+  color:var(--color-light-grey)
 }
 
 .middleSection {
@@ -58,6 +59,7 @@
 .middleSection .bio {
   line-height: 1.7;
   display: block;
+  color:var(--color-light-grey);
 }
 
 .reposAndFollowers {
@@ -180,18 +182,18 @@
   }
 
   .infoContainer {
-    width: 70%;
+    width: 75%;
     margin-left: auto;
   }
 
   .middleSection {
-    width: 70%;
+    width: 75%;
     display: block;
     margin: 0 0.5rem 0 auto;
   }
 
   .bottomContainer {
-    width: 70%;
+    width: 75%;
     margin: 0 0 0 auto;
     padding-right: 0;
   }
@@ -199,4 +201,10 @@
   .infoContainer h2 {
     margin: 0.7rem 0;
   }
+}
+
+@media screen and (min-width: 1601px) {
+    .card {
+        padding: 3rem 4rem;
+    }
 }

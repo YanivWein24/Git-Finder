@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <h2 className="brand">Git-Finder</h2>
+      <h2 className="brand">Git-Finderr</h2>
       <div
         className="themeSwitch"
         onClick={() => {

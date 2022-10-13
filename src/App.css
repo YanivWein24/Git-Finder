@@ -26,8 +26,14 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
   .App {
-    width: 55%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .App {
+    width: 40%;
   }
 }

@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.header h2 {
+  font-family: "Noto Sans Mono", monospace;
+}
+
 .header p {
   font-family: "Noto Sans Mono", monospace;
   text-transform: capitalize;
@@ -23,6 +27,6 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    margin: 4rem auto 1rem;
+    margin: 2.5rem auto 1rem;
   }
 }
