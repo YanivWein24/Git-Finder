@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Git Finderr
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img align="center" src="https://user-images.githubusercontent.com/97472180/195611602-a94385e0-3004-4acc-b40e-ce28f9c20037.gif"
+alt="My Project GIF" width="600" height="323">  
+<br>
 
-## Available Scripts
+A search engine for GitHub users! <br />
+Type in a valid GitHub username and find all the relevant info about that user. <br />
+All data is coming from GitHub's official REST-API <br />
+Responsive and well-suited for mobile, tablets, and desktop screens.
 
-In the project directory, you can run:
+## Where can i check this out?
 
-### `npm start`
+Right Here: https://git-finderr.netlify.app/
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Lighthouse Score:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://user-images.githubusercontent.com/97472180/195610114-be809288-1e1d-4221-83b7-216b2a04e9a8.PNG" height="180" width="500" alt="HomeScreen-light"/>
 
-### `npm test`
+## Screenshots:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+<table>
+<tr>
+<td>Light Mode</td>
+<td>Dark Mode</td>
+</tr>
+<tr>
+<td><img src="https://user-images.githubusercontent.com/97472180/195613129-13230791-700e-4d99-b853-319f86257c2c.PNG" height="300" width="400" alt="UserScreen">  </td>
+<td><img src="https://user-images.githubusercontent.com/97472180/195613865-a0cd5e6a-b926-4209-bbe3-7590346bf153.PNG" height="300" width="400" alt="EmptyUserScreen" >  </td>
+</tr>
+</table>
+</p>
 
-### `npm run build`
+### On Mobile:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+<table>
+  <tr>
+     <td>Light Mode</td>
+    <td>Dark Mode</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/97472180/195615197-202bfde4-8b26-4bb9-ab22-a97acd26e43e.jpg" width=300 height=600></td>
+    <td><img src="https://user-images.githubusercontent.com/97472180/195615183-df537df0-4caf-4588-9f04-fab6f8efac9d.jpg" width=300 height=600></td>
+  </tr>
+ </table>
+</p>
