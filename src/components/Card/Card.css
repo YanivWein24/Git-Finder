@@ -1,204 +1,202 @@
 .card {
-    background-color: var(--color-dark-blue);
-    margin:1rem auto 2rem;
-    padding:1.5rem 1rem ;
-    border-radius:20px;
-    position:relative;
+  background-color: var(--color-dark-blue);
+  margin: 1rem auto 2rem;
+  padding: 1.5rem 1rem;
+  border-radius: 20px;
+  position: relative;
 }
 
 .bold {
-    font-weight:600;
-    font-size: 18px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .small {
-font-size: 11px;
+  font-size: 11px;
 }
 
 .topSection {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;;
-    gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
 
 .imageContainer img {
-    width:100px;
-    height:100px;
-    border-radius:50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 
 .infoContainer h1 {
-    font-size:20px;
-    line-height: 1;
-    font-family: 'Noto Sans Mono', monospace;
-    margin-bottom:0;
-    color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  font-family: "Noto Sans Mono", monospace;
+  margin-bottom: 0;
+  color: #fff;
 }
 
 .infoContainer h2 {
-    color: var(--color-light-blue);
-    font-size:12px;
-    font-weight:500;
-    transition: all .2s ease;
+  color: var(--color-light-blue);
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .infoContainer p {
-    font-family: 'Noto Sans Mono', monospace;
-    font-size:14px;
-    font-weight:500;
-    margin-top:0;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0;
 }
 
 .middleSection {
-    font-family: 'Noto Sans Mono', monospace;
-    font-size:14px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 14px;
 }
 
-.middleSection .bio{
-    line-height:1.7;
-    display:block;
+.middleSection .bio {
+  line-height: 1.7;
+  display: block;
 }
 
 .reposAndFollowers {
-    background-color: var(--color-darker-blue);
-    padding:.7rem 2rem;
-    margin: 1.3rem auto;
-    display:flex;
-    justify-content: space-evenly;
-    border-radius:20px;
+  background-color: var(--color-darker-blue);
+  padding: 0.7rem 2rem;
+  margin: 1.3rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
 }
 
-.reposAndFollowers p{
-    display: inline;
-    margin: 0.5rem auto;
+.reposAndFollowers p {
+  display: inline;
+  margin: 0.5rem auto;
 }
 
 .reposAndFollowers .tableSection {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin: 0 .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.3rem;
 }
 
 .bottomContainer {
-    padding: 0 .3rem;
+  padding: 0 0.3rem;
 }
 
 .bottomContainer p,
 .bottomContainer a {
-    margin:0.5rem 0;
-    font-family: 'Noto Sans Mono', monospace;
-    font-size:12px;
-    text-decoration: none;
-    color: var(--color-white);
+  margin: 0.5rem 0;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 .bottomContainer i {
-    font-size:1.3rem;
-    width:20px;
-    height:20px;
+  font-size: 1.3rem;
+  width: 20px;
+  height: 20px;
 }
 
 .bottomContainer .noInfo {
-    color: rgba(220,220,220,.7);
+  color: rgba(220, 220, 220, 0.7);
 }
 
-#light .bottomContainer .noInfo  {
-    color: rgba(110,110,110,.6);
+#light .bottomContainer .noInfo {
+  color: rgba(110, 110, 110, 0.6);
 }
 
 .bottomContainer .row {
-    display:flex;
-    align-items: center;
-    gap:1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-#light .card{
-    background-color: var(--color-off-white);
+#light .card {
+  background-color: var(--color-off-white);
 }
 
 #light .reposAndFollowers {
-    background-color: rgb(90,90,90);
+  background-color: rgb(90, 90, 90);
 }
 
 #light .card p,
 #light .bottomContainer a,
 #light .card h1,
-#light .card i{
-    color: var(--color-dark-grey);
+#light .card i {
+  color: var(--color-dark-grey);
 }
 
-#light .tableSection p  {
-    color: var(--color-white);
+#light .tableSection p {
+  color: var(--color-white);
 }
 
 #light .card h2 {
-    color: rgb(230, 154, 42);
-    font-weight:bold;
+  color: rgb(230, 154, 42);
+  font-weight: bold;
 }
 
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 2rem;
+  }
 
-@media screen and (min-width:768px) {
-    .card {
-        padding:2rem;
-    }
+  .topSection {
+    gap: 2rem;
+  }
 
-    .topSection {
-        gap: 2rem;
-    }
+  .imageContainer img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+  }
 
-    .imageContainer img {
-        width:120px;
-        height:120px;
-        border-radius:100px;
-    }
+  .bottomContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
 
-    .bottomContainer {
-        display:flex;
-        flex-wrap: wrap;
-        padding: 0 2rem;
-    }
-
-    .row {
-        width: 50%;
-    }
+  .row {
+    width: 50%;
+  }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 2rem 3rem;
+  }
 
-    .card {
-        padding: 2rem 3rem;
-    }
+  .topSection {
+    gap: 4rem;
+  }
 
-    .topSection {
-        gap: 4rem;
-    }
+  .imageContainer img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .imageContainer img {
-        width: 150px;
-        height: 150px;
-    }
+  .infoContainer {
+    width: 70%;
+    margin-left: auto;
+  }
 
-    .infoContainer  {
-        width: 70%;
-        margin-left: auto;
-    }
+  .middleSection {
+    width: 70%;
+    display: block;
+    margin: 0 0.5rem 0 auto;
+  }
 
-    .middleSection {
-        width:70%;
-        display: block;
-        margin: 0 .5rem 0 auto;
-    }
+  .bottomContainer {
+    width: 70%;
+    margin: 0 0 0 auto;
+    padding-right: 0;
+  }
 
-    .bottomContainer {
-        width: 70%;
-        margin:0 0 0 auto;
-        padding-right:0;
-    }
-
-    .infoContainer h2 {
-        margin: .7rem 0;
-    }
+  .infoContainer h2 {
+    margin: 0.7rem 0;
+  }
 }

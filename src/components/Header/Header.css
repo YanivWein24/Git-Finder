@@ -1,28 +1,28 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header p {
-    font-family: 'Noto Sans Mono', monospace;
-    text-transform: capitalize;
+  font-family: "Noto Sans Mono", monospace;
+  text-transform: capitalize;
 }
 
 .header p i {
-    margin-left:.3rem;
-    font-weight:600;
+  margin-left: 0.3rem;
+  font-weight: 600;
 }
 .header .themeSwitch {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 #light .header {
-    color: var(--color-dark-grey);
-} 
+  color: var(--color-dark-grey);
+}
 
-@media screen and (min-width:768px) {
-    .header {
-        margin:4rem auto 1rem;
-    }
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 4rem auto 1rem;
+  }
 }

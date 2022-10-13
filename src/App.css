@@ -1,5 +1,5 @@
 .App {
-  width:90%;
+  width: 90%;
   margin: 0 auto;
   color: var(--color-white);
 }
@@ -10,23 +10,23 @@
   margin: 1.5rem auto 0;
   border-radius: 20px;
   font-size: 1.2rem;
-  width:70%;
-  font-family: 'Noto Sans Mono', monospace;
+  width: 70%;
+  font-family: "Noto Sans Mono", monospace;
   background-color: var(--color-dark-blue);
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
 
 #light .error {
   background-color: var(--color-dark-grey);
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .App {
     width: 70%;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .App {
     width: 55%;
   }
