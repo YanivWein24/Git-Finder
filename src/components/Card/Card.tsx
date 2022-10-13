@@ -1,6 +1,6 @@
 import React from 'react'
 import './Card.css'
-import {UserData} from '../../App'
+import {UserData} from '../../UserData'
 
 const Card = ({userData}:{userData:UserData}) => {
     return (
