@@ -9,6 +9,7 @@ import { UserData } from "./UserData";
 import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import Card from "./components/Card/Card";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 export type globalContext = {
@@ -62,6 +63,7 @@ const App: FC = () => {
           userData.id > 0 && <Card userData={userData} />
         )}
       </div>
+      <Footer />
     </ThemeContext.Provider>
   );
 };

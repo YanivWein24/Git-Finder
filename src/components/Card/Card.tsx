@@ -44,7 +44,9 @@ const Card = ({ userData }: { userData: UserData }) => {
         <div className="row">
           <i className="fa-solid fa-link"></i>
           {userData.blog ? (
-            <a href={userData.blog}>{userData.blog.slice(-1) === '/' ? userData.blog.slice(0, (userData.blog.length -1)) : userData.blog}</a>
+            <a href={userData.blog}
+            target="_blank"
+            rel="noopener noreferrer">{userData.blog.slice(-1) === '/' ? userData.blog.slice(0, (userData.blog.length -1)) : userData.blog}</a>
             // using conditional to remove the '/' char at the end of the url (of existed)
           ) : (
             <p className="noInfo">No blog Info</p>

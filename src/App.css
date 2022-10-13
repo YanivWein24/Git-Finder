@@ -1,5 +1,6 @@
 .App {
   width: 90%;
+  min-height:80vh;
   margin: 0 auto;
   color: var(--color-white);
 }
