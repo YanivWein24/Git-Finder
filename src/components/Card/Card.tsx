@@ -7,7 +7,7 @@ const Card = ({userData}:{userData:UserData}) => {
     <div className="card fade-in">
         <div className="topSection">
             <div className="imageContainer">
-                <img src={userData.imageUrl} alt="user image"></img>
+                <img src={userData.imageUrl} alt="user"></img>
             </div>
             <div className="infoContainer">
                 <h1>{userData.name}</h1>

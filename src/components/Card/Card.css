@@ -3,6 +3,7 @@
     margin:1rem auto 2rem;
     padding:1.5rem 1rem ;
     border-radius:20px;
+    position:relative;
 }
 
 .bold {
@@ -56,6 +57,7 @@ font-size: 11px;
 
 .middleSection .bio{
     line-height:1.7;
+    display:block;
 }
 
 .reposAndFollowers {
@@ -133,12 +135,12 @@ font-size: 11px;
 }
 
 #light .card h2 {
-    color: rgb(255, 170, 42);
+    color: rgb(230, 154, 42);
     font-weight:bold;
 }
 
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) {
     .card {
         padding:2rem;
     }
@@ -164,3 +166,39 @@ font-size: 11px;
     }
 }
 
+@media screen and (min-width:1024px) {
+
+    .card {
+        padding: 2rem 3rem;
+    }
+
+    .topSection {
+        gap: 4rem;
+    }
+
+    .imageContainer img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .infoContainer  {
+        width: 70%;
+        margin-left: auto;
+    }
+
+    .middleSection {
+        width:70%;
+        display: block;
+        margin: 0 .5rem 0 auto;
+    }
+
+    .bottomContainer {
+        width: 70%;
+        margin:0 0 0 auto;
+        padding-right:0;
+    }
+
+    .infoContainer h2 {
+        margin: .7rem 0;
+    }
+}
