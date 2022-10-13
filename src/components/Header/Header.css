@@ -2,14 +2,19 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin:1rem auto;
+    padding:1rem auto;
 }
 
 .header p {
     font-family: 'Noto Sans Mono', monospace;
+    text-transform: capitalize;
 }
 
 .header p i {
     margin-left:.1rem;
     font-weight:600;
 }
+
+#light .header {
+    color: var(--color-dark-grey);
+} 

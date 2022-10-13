@@ -43,3 +43,20 @@
     font-size:1.7rem;
     color:var(--color-light-blue);
 }
+
+#light .search {
+    background-color: var(--color-off-white);
+}
+
+#light .search input,
+#light .search input::placeholder {
+    color: var(--color-dark-grey);
+}
+
+#light .search button {
+    background-color: rgb(255, 170, 42);
+}
+
+#light .search i {
+    color: rgb(255, 170, 42);
+}

@@ -12,7 +12,7 @@ const Card = ({userData}:{userData:UserData}) => {
             <div className="infoContainer">
                 <h1>{userData.name}</h1>
                 <h2>@{userData.userName}</h2>
-                <p>Joined {userData.joinedAt}</p>
+                <p>Joined {userData.joinedAt.slice(0,10)}</p>
             </div>
         </div>
         <div className="middleSection">
@@ -39,7 +39,7 @@ const Card = ({userData}:{userData:UserData}) => {
             </div>
             <div className="row">
                 <i className="fa-solid fa-link"></i>
-                {userData.blog ? <p>{userData.blog}</p> : <p style={{"color":"grey"}}>No blog Info</p>}
+                {userData.blog ? <a href={userData.blog}>{userData.blog}</a> : <p style={{"color":"grey"}}>No blog Info</p>}
             </div>
             <div className="row">
                 <i className="fa-brands fa-twitter"></i>
