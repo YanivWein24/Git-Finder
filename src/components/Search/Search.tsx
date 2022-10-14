@@ -25,7 +25,8 @@ const Search = ({
           blog: data.blog || "",
           twitter: data.twitter_userName || "",
           company: data.company || "",
-          repos: data.public_repos || "",
+          repos: data.public_repos || 0,
+          link: data.html_url || ""
         })
       )
       .then(() => setSearch(""));

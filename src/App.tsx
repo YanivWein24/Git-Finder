@@ -38,6 +38,7 @@ const App: FC = () => {
     twitter: "",
     company: "",
     repos: -1,
+    link: "",
   });
 
   const getLocalStorage = () => {

@@ -22,10 +22,39 @@
   gap: 1rem;
 }
 
+.imageContainer {
+  width:100px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align:center;
+}
+
 .imageContainer img {
   width: 100px;
   height: 100px;
   border-radius: 50px;
+  margin-bottom:.5rem;
+}
+
+.imageContainer a {
+  color:var(--color-offWhite);
+  background-color: var(--color-darker-blue); 
+  text-decoration:none;
+  font-size: 12px;
+  font-weight:600;
+  padding: .5rem;
+  border-radius: 8px;
+  transition: all .3s ease;
+}
+
+.imageContainer a:hover {
+  background-color: var(--color-light-blue); 
+  transform: scale(1.02)
+}
+
+.imageContainer a:active {
+  transform: scale(1.05)
 }
 
 .infoContainer h1 {
@@ -121,7 +150,8 @@
   background-color: var(--color-off-white);
 }
 
-#light .reposAndFollowers {
+#light .reposAndFollowers,
+#light .imageContainer a {
   background-color: rgb(90, 90, 90);
 }
 
@@ -134,6 +164,10 @@
 
 #light .tableSection p {
   color: var(--color-white);
+}
+
+#light .imageContainer a:hover {
+  background-color: rgb(230, 154, 42);
 }
 
 #light .card h2 {
@@ -150,10 +184,19 @@
     gap: 2rem;
   }
 
+  .imageContainer {
+    width: 120px;
+  }
+
+  .imageContainer a {
+    font-size:.7rem;
+  }
+
   .imageContainer img {
     width: 120px;
     height: 120px;
     border-radius: 100px;
+    margin-bottom: 1rem;
   }
 
   .bottomContainer {
@@ -173,7 +216,22 @@
   }
 
   .topSection {
-    gap: 4rem;
+    gap: 3rem;
+    align-items:flex-start;
+  }
+
+  .infoContainer {
+    margin-top:1rem;
+    display: flex;
+    flex-direction:column;
+  }
+
+  .imageContainer {
+    width: 150px;
+  }
+
+  .imageContainer a {
+    font-size:.85rem;
   }
 
   .imageContainer img {
@@ -184,6 +242,10 @@
   .infoContainer {
     width: 75%;
     margin-left: auto;
+  }
+
+  .card p.bio {
+    margin: 0;
   }
 
   .middleSection {

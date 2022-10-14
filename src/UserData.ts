@@ -13,4 +13,5 @@ export type UserData = {
   twitter: string;
   company: string;
   repos: number;
+  link: string
 };

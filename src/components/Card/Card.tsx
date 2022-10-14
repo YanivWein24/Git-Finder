@@ -8,6 +8,9 @@ const Card = ({ userData }: { userData: UserData }) => {
       <div className="topSection">
         <div className="imageContainer">
           <img src={userData.imageUrl} alt="user"></img>
+          <a href={userData.link} 
+            target="_blank"
+            rel="noopener noreferrer">Visit On Github</a>
         </div>
         <div className="infoContainer">
           <h1>{userData.name}</h1>
