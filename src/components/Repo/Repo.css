@@ -1,0 +1,118 @@
+.repo {
+    background-color: var(--color-darker-blue);
+    padding: 1.5rem 1.5rem 1rem;
+    margin: .7rem 0;
+    border-radius:20px;
+}
+
+.repo .name,
+.repo .column,
+.repo .description {
+    font-family: "Noto Sans Mono", monospace;
+}
+
+.repo .name {
+    margin: 0;
+    font-size:1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.repo .description,
+.repo .language {
+    color: var(--color-light-grey);
+}
+
+.repo .description {
+    font-size:.9rem;
+}
+
+.repo .language {
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-light-blue);
+}
+
+.repo a {
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+    padding: .5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    width:30%;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+}
+
+.repo a:hover {
+    transform: scale(1.03);
+}
+
+.repo a:active {
+    transform: scale(1.07);
+}
+
+.repo .container {
+    background-color: var(--color-dark-blue);
+    padding: 0.5rem 1.5rem;
+    margin: .7rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.repo .column {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.repo .column p {
+    margin: 0 0 .5rem;
+}
+
+.repo .column .tableHeader {
+    font-size: .65rem;
+    font-weight: 500;
+}
+
+.repo .column .tableContent {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#light .repo .language {
+    color: rgb(230, 154, 42);
+}
+#light .repo a {
+    background-color: rgb(230, 154, 42);
+} 
+
+#light .repo {
+    background-color: rgb(150,150,150);
+}
+
+#light .repo .container {
+    background-color: rgb(90, 90, 90);
+}
+
+#light .repo .container p,
+#light .repo .container a {
+    color: var(--color-off-white);
+}
+
+#light .repo .description {
+    color:rgb(90, 90, 90);
+}
+
+#light .repo .name {
+    color: rgb(85,85,85);
+}

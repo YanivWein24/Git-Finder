@@ -5,11 +5,12 @@ import React, {
   Dispatch,
   SetStateAction,
 } from "react";
-import { UserData } from "./UserData";
+import { UserData, RepoType } from "./UserData";
 import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
+import ReposContainer from "./components/ReposContainer/ReposContainer";
 import "./App.css";
 
 export type globalContext = {
@@ -41,6 +42,8 @@ const App: FC = () => {
     link: "",
   });
 
+  const [repos, setRepos] = useState<RepoType[]>([])
+
   const getLocalStorage = () => {
     let theme = localStorage.getItem("theme");
     return theme ? JSON.parse(theme) : "dark";
@@ -53,7 +56,7 @@ const App: FC = () => {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className="App" id={theme}>
         <Header />
-        <Search setUserData={setUserData} />
+        <Search setUserData={setUserData} setRepos={setRepos} />
         {userData.id === -2 ? (
           <h1 className="error fade-in">
             ooops...
@@ -61,7 +64,11 @@ const App: FC = () => {
             couldn't find user
           </h1>
         ) : (
-          userData.id > 0 && <Card userData={userData} />
+          userData.id > 0 &&
+          <>
+          <Card userData={userData} />
+          { repos.length > 0 && <ReposContainer repos={repos} /> }
+          </>
         )}
       </div>
       <Footer />

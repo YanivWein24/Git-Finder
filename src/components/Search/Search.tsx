@@ -3,8 +3,10 @@ import "./Search.css";
 
 const Search = ({
   setUserData,
+  setRepos,
 }: {
   setUserData: React.Dispatch<React.SetStateAction<any>>;
+  setRepos: React.Dispatch<React.SetStateAction<any>>;
 }) => {
   const [search, setSearch] = useState<string>("");
 
@@ -29,6 +31,13 @@ const Search = ({
           link: data.html_url || ""
         })
       )
+      
+      fetch(`https://api.github.com/users/${search}/repos?per_page=10&sort=created&direction=desc`)
+      .then((res) => res.json())
+      .then((data) => {
+        const receivedRepos = data.length > 7 ? data.slice(0,7) : data
+        !receivedRepos.message ? setRepos(receivedRepos) : setRepos([]) // change the state only if the fetch was successful
+      })
       .then(() => setSearch(""));
   };
 

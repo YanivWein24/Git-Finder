@@ -15,3 +15,14 @@ export type UserData = {
   repos: number;
   link: string
 };
+
+export type RepoType = {
+  id: number;
+  name: string;
+  description: string;
+  html_url: string;
+  language: string;
+  stargazers_count: number;
+  watchers: number;
+  forks: number;
+}
