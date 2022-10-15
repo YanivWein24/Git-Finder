@@ -19,6 +19,7 @@
 
 #light .error {
   background-color: var(--color-dark-grey);
+  color:  var(--color-white);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

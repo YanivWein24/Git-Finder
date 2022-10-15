@@ -21,3 +21,19 @@
 #light h1 {
   color: var(--color-dark-grey);
 }
+
+@media screen and (min-width: 768px) {
+    .reposContainer {
+        padding: 2.5rem;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+    .reposContainer {
+        padding: 3rem 3rem 1rem;
+    }
+
+    .reposContainer h1 {
+    font-size: 24px;
+}
+} 

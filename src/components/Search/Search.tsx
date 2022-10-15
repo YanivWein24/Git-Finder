@@ -32,11 +32,10 @@ const Search = ({
         })
       )
       
-      fetch(`https://api.github.com/users/${search}/repos?per_page=10&sort=created&direction=desc`)
+      fetch(`https://api.github.com/users/${search}/repos?per_page=5&sort=created&direction=desc`)
       .then((res) => res.json())
       .then((data) => {
-        const receivedRepos = data.length > 7 ? data.slice(0,7) : data
-        !receivedRepos.message ? setRepos(receivedRepos) : setRepos([]) // change the state only if the fetch was successful
+        !data.message ? setRepos(data) : setRepos([]) // on fail fetch we receive an error msg in - data.message 
       })
       .then(() => setSearch(""));
   };
