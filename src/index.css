@@ -39,6 +39,7 @@ code {
   --color-off-white: rgb(200, 200, 200);
   --color-light-grey: rgb(170, 170, 170);
   --color-dark-grey: rgb(110, 110, 110);
+  --color-orange: rgb(230, 154, 42);
 }
 
 .fade-in {

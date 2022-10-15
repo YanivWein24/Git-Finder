@@ -13,7 +13,7 @@ export type UserData = {
   twitter: string;
   company: string;
   repos: number;
-  link: string
+  link: string;
 };
 
 export type RepoType = {
@@ -25,4 +25,4 @@ export type RepoType = {
   stargazers_count: number;
   watchers: number;
   forks: number;
-}
+};

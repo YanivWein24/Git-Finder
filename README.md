@@ -1,6 +1,6 @@
 # Git Finderr
 
-<img align="center" src="https://user-images.githubusercontent.com/97472180/195611602-a94385e0-3004-4acc-b40e-ce28f9c20037.gif"
+<img align="center" src="https://user-images.githubusercontent.com/97472180/195998154-d0aa6a65-1035-48e1-89f4-e9707b1cea64.gif"
 alt="My Project GIF" width="600" height="323">  
 <br>
 
@@ -16,7 +16,8 @@ Right Here: https://git-finderr.netlify.app/
 
 ## Features:
 
-- Search for any user on GitHub and get updated data.
+- Search for GitHub users by their username
+- See relevant user information based on their search - including their latest repos
 - Support for dark/light modes using 'Context'.
 - The theme is being memorized in the user's local storage, for the next time they visit!
 

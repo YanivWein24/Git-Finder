@@ -14,8 +14,8 @@
   color: var(--color-white);
   font-family: "Noto Sans Mono", monospace;
   font-size: 12px;
-  width:100%;
-  padding-left: .5rem;
+  width: 100%;
+  padding-left: 0.5rem;
 }
 .search input:focus {
   border: none;

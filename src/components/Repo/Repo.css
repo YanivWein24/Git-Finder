@@ -44,21 +44,21 @@
     font-weight: 500;
     text-align: center;
     display: block;
-    width:5rem;
+    width:30%;
     margin: 0 auto;
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
 }
 
 .repo a:hover {
-    transform: scale(1.03);
+    background-color:#1f51dd;
 }
 
 .repo a:active {
-    transform: scale(1.07);
+    transform: scale(1.05);
 }
 
 .repo .container {
-    background-color: var(--color-dark-blue);
+    background-color: #1d2844;
     padding: 0.5rem 1.5rem;
     margin: .7rem 0;
     display: flex;
@@ -78,9 +78,11 @@
     margin: 0 0 .5rem;
 }
 
-.repo .column .tableHeader {
-    font-size: .65rem;
-    font-weight: 500;
+.repo .column i {
+    font-size: 1em;
+    margin-bottom:.7rem;
+    color: var(--color-off-white);
+
 }
 
 .repo .column .tableContent {
@@ -90,10 +92,15 @@
 }
 
 #light .repo .language {
-    color: rgb(230, 154, 42);
+    color: var(--color-orange);
 }
+
 #light .repo a {
-    background-color: rgb(230, 154, 42);
+    background-color: var(--color-orange);
+} 
+
+#light .repo a:hover {
+    background-color: rgb(216, 142, 32);
 } 
 
 #light .repo {
@@ -106,7 +113,7 @@
 
 #light .repo .container p,
 #light .repo .container a {
-    color: var(--color-white);
+    color: var(--color-off-white);
 }
 
 #light .repo .description {
@@ -120,27 +127,26 @@
 
 @media screen and (min-width: 768px) {
     .repo {
-        padding: 2rem  2rem 1.5rem;
+        padding: 2rem z;
     }
 
     .repo .container {
         width: 65%;
         margin: .7rem auto;
     }
-
-    .repo a {
-        width:7rem;
-    }
 } 
 
 @media screen and (min-width: 1024px) {
     .repo {
         padding: 2.5rem 3.5rem 2rem ;
-        margin: 1rem 0;
     }
 
     .repo .container {
         width: 60%;
         margin: .5rem auto 1.2rem;
+    }
+
+    .repo a {
+        width: 7rem;
     }
 } 

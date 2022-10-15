@@ -42,7 +42,7 @@ const App: FC = () => {
     link: "",
   });
 
-  const [repos, setRepos] = useState<RepoType[]>([])
+  const [repos, setRepos] = useState<RepoType[]>([]);
 
   const getLocalStorage = () => {
     let theme = localStorage.getItem("theme");
@@ -64,11 +64,12 @@ const App: FC = () => {
             couldn't find user
           </h1>
         ) : (
-          userData.id > 0 &&
-          <>
-          <Card userData={userData} />
-          { repos.length > 0 && <ReposContainer repos={repos} /> }
-          </>
+          userData.id > 0 && (
+            <>
+              <Card userData={userData} />
+              {repos.length > 0 && <ReposContainer repos={repos} />}
+            </>
+          )
         )}
       </div>
       <Footer />

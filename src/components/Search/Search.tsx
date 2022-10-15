@@ -28,14 +28,16 @@ const Search = ({
           twitter: data.twitter_userName || "",
           company: data.company || "",
           repos: data.public_repos || 0,
-          link: data.html_url || ""
+          link: data.html_url || "",
         })
-      )
-      
-      fetch(`https://api.github.com/users/${search}/repos?per_page=5&sort=created&direction=desc`)
+      );
+
+    fetch(
+      `https://api.github.com/users/${search}/repos?per_page=5&sort=created&direction=desc`
+    )
       .then((res) => res.json())
       .then((data) => {
-        !data.message ? setRepos(data) : setRepos([]) // on fail fetch we receive an error msg in - data.message 
+        !data.message ? setRepos(data) : setRepos([]); // on fail fetch we receive an error msg in - data.message
       })
       .then(() => setSearch(""));
   };
