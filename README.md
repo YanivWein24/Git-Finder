@@ -36,8 +36,8 @@ Right Here: https://git-finderr.netlify.app/
 <td>Dark Mode</td>
 </tr>
 <tr>
-<td><img src="https://user-images.githubusercontent.com/97472180/195613129-13230791-700e-4d99-b853-319f86257c2c.PNG" height="300" width="400" alt="UserScreen">  </td>
-<td><img src="https://user-images.githubusercontent.com/97472180/195613865-a0cd5e6a-b926-4209-bbe3-7590346bf153.PNG" height="300" width="400" alt="EmptyUserScreen" >  </td>
+<td><img src="https://user-images.githubusercontent.com/97472180/205495569-7c299375-e528-4ef1-929f-6a4b97986283.PNG" height="300" width="400" alt="UserScreen">  </td>
+<td><img src="https://user-images.githubusercontent.com/97472180/205495572-c4d23f06-3abe-4f2e-8dc7-a10f587bf6b3.PNG" height="300" width="400" alt="EmptyUserScreen" >  </td>
 </tr>
 </table>
 </p>
@@ -51,8 +51,8 @@ Right Here: https://git-finderr.netlify.app/
     <td>Dark Mode</td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/97472180/195615197-202bfde4-8b26-4bb9-ab22-a97acd26e43e.jpg" width=300 height=600></td>
-    <td><img src="https://user-images.githubusercontent.com/97472180/195615183-df537df0-4caf-4588-9f04-fab6f8efac9d.jpg" width=300 height=600></td>
+    <td><img src="https://user-images.githubusercontent.com/97472180/205495568-3526bd75-4132-486c-8930-235a69b6d2a7.PNG" width=300 height=600></td>
+    <td><img src="https://user-images.githubusercontent.com/97472180/205495565-68d138fe-30a4-4ecd-8b46-7b51bcc1ba0d.PNG" width=300 height=600></td>
   </tr>
  </table>
 </p>
